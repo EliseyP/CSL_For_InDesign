@@ -2,7 +2,7 @@
 Adobe InDesign scripts for church-slavonic language.
 
 ### Псевдо-автоматическая нумерация страниц в цся
-[writeOutNumbersCSL](writeOutNumbersCSL/writeOutNumbersCSL.jsx)  
+[writeOutNumbersCSL.jsx](writeOutNumbersCSL/writeOutNumbersCSL.jsx)  
 
 ### Номера страниц в оглавлении → цся 
 арабские → буквенные церковнославянские  
