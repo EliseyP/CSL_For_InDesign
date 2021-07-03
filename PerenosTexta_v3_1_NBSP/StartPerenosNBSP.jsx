@@ -1,5 +1,16 @@
 ﻿//Скрипт создал DAndr, ел. почта: niko1987a@yandex.ru или niko1987nk@gmail.com.   // VK: https://vk.com/id547800930
 //Спасибо за помощь   Михаилу Иванюшину, 2012-2016  ivanyushin#yandex.ru  m.ivanyushin#gmail.com сайт:  http://adobeindesign.ru
+
+////////////////////////////////////////////////////////////
+// +
+// Доработано для возможности помещать в кустоду два слова,
+// связанные неразрывным пробелом.
+// Двоеточие после последнего слова не удаляется
+// (как и дефис для составных слов).
+// Добавлен файл DivisionOfWord_v2.1_NBSP.jsx
+//
+// AgripniSoft
+
 #targetengine "session"
    var myWindow = new Window ("palette", "Переносы (кустода)");
    myWindow.margins = 5;
