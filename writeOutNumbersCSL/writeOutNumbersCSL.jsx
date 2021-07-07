@@ -89,13 +89,14 @@ function findByLabel (items, label)
 function numberToText(number) {
     /*
         Предполагается, что в книге не будет более 99999 стр.
-     */
+    */
     var ones_list = ["", "а", "в", "г", "д", "є", "ѕ", "з", "и", "ѳ"];
     var titlo = "҃";
     var res = "";
 
     if (number < 0) res = "ha ha"; // from origin script :-)
     if (number == 0) res = ones_list[0];
+    if (number > 99999) res = String(number);
 
     function handle_before_hundred(_number){
       // From 1 to 99
@@ -136,7 +137,6 @@ function numberToText(number) {
     }
 
     
-    
     if (number >= 0 && number <= 99 ){
         res = handle_before_hundred(number)
     }
@@ -146,7 +146,6 @@ function numberToText(number) {
     else if (number >= 1000 && number <= 99999){
       var thousands = Math.floor(number / 1000); // Тысячи.
       var hunds_and_tens_and_ones = number % 1000; // Сотни, десятки и единицы.
-      var thousands_str = ones_list[thousands];
       var thousands_str = handle_before_hundred(thousands)
       
       if (hunds_and_tens_and_ones == 0){
