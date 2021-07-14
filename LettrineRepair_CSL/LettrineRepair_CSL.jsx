@@ -134,7 +134,17 @@ function convert_unicode_to_ucs(_string){
     var ucs_caps_omega = "W";
     var ucs_caps_omega_with_zvatelco = "Њ";
     //--------------------------------
+
+    // О
+    var unic_caps_o_broad = "Ѻ";
+    var unic_caps_o_broad_with_zvatelco = unic_caps_o_broad + Zvatelco;
+    var unic_caps_o_broad_with_iso = unic_caps_o_broad + Iso;
+    // нет отдельного символа. -> Обычное "О" 
+    var ucs_caps_o = "О";
+    var ucs_caps_o_with_zvatelco = "N";
+    var ucs_caps_o_with_iso = "Џ";
     
+    //--------------------------------    
     var unic_caps_omega_great = "Ѽ";
     var ucs_caps_omega_great = "Q";
     //--------------------------------    
@@ -189,6 +199,7 @@ function convert_unicode_to_ucs(_string){
     var ucs_caps_i_decimal_with_zvatelco = "Ї";
     var ucs_caps_i_decimal_with_iso = "Ј";
     //--------------------------------
+    //--------------------------------
     // Я (юс) + надстрочники
    var unic_caps_ya = "Ѧ";
    var unic_caps_ya_with_zvatelco = unic_caps_ya + Zvatelco;
@@ -208,6 +219,9 @@ function convert_unicode_to_ucs(_string){
     
     dic[unic_caps_omega_with_zvatelco] = ucs_caps_omega_with_zvatelco;
     dic[unic_caps_omega_great] = ucs_caps_omega_great;
+
+    dic[unic_caps_o_broad_with_zvatelco] = ucs_caps_o_with_zvatelco;
+    dic[unic_caps_o_broad_with_iso] = ucs_caps_o_with_iso;
     
     dic[unic_caps_ya_iot_with_zvatelco] = ucs_caps_ya_iot_with_zvatelco;
     dic[unic_caps_ya_iot_with_iso] = ucs_caps_ya_iot_with_iso;
