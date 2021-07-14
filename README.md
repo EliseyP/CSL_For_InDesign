@@ -12,4 +12,4 @@ Adobe InDesign scripts for church-slavonic language.
 [StartPerenosNBSP.jsx](PerenosTexta_v3_1_NBSP/StartPerenosNBSP.jsx)  
 
 ### Замена буквиц на символы из гарнитуры Bukvica UCS  
-[Lettrine_BukvicaUCS](LettrineBukvicaUCS)
+[LettrineBukvicaUCS](LettrineBukvicaUCS)
